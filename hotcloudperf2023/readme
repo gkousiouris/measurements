@@ -1,2 +1,11 @@
 
 The folder contains the data from the submitted publication "Exploring the cloud/edge space-time continuum execution of a FaaS E-health inference process across diverse clusters", submitted in HotCloudPerf 2023. The data consist of the raw measurements per request, as well as the concentrated outputs per experiment configuration
+
+The raw data include the columns:
+parentSampleTime	action	otherInfo	setRate	globalStartTime	duration	waitTime	initTime	start	end	memory	success	clientSample	Network Latency withou Init	UserSideDelay (calculated from raw)
+
+
+The processed data include the columns:
+setRate	globalStartTime	averageDuration	averageWaitTime	averageInitTime	achievedAverageRate	averageUserSideDelay	averageStartLatency	successPercentage	coldStarts	launchGeneratorDelay	stdDevDuration	stdDevWaitTime	stdDevInitTime	stdDevUserSideDelay	stdDevStartLatency	Network Latency
+
+Times are in milliseconds while rates are in messages/minute.
